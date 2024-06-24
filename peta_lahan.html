@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Web Map Gunung Kidul</title>
+      <link rel="stylesheet" href="style.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="css/leaflet.css">
+      <link rel="stylesheet" href="css/qgis2web.css">
+      <link rel="stylesheet" href="css/fontawesome-all.min.css">
+      <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+      <link rel="stylesheet" href="css/leaflet-measure.css">
+   </head>
+
+   <body>
+      <nav class="sidebar ">
+         <header>
+            <div class="image-text">
+               <span class="image">
+                  <img src="./img/logo.jpg" alt="logo">
+               </span>
+               <div class="text header-text">
+                  <span class="name">Web Map</span>
+                  <span class="profession">Gunung Kidul</span>
+               </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+         </header>
+
+         <div class="menu-bar">
+            <div class="menu">
+               <ul class="menu-links">
+                  <li class="search-box">
+                     <i class='bx bx-search-alt icon'></i>
+                     <input type="search" placeholder="Search...">
+                  </li>
+                  <li class="nav-link">
+                     <a href="index.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Home</span>
+                     </a>
+                  </li>
+                  <li class="nav-link">
+                     <a href="profil.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Deskripsi</span>
+                     </a>
+                  </li>
+                  <li class="nav-link">
+                     <a href="peta_lahan.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Fungsi lahan</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="bottom-content">
+               <li class="mode">
+                  <div class="moon-sun">
+                     <i class='bx bx-moon icon moon'></i>
+                     <i class='bx bx-sun icon sun'></i>
+                  </div>
+                  <span class="mode-text text">Dark Mode</span>
+                  <div class="toggle-switch">
+                     <span class="switch"></span>
+                  </div>
+               </li>
+            </div>
+         </div>
+      </nav>
+      <section class="peta-lahan">
+         <div class="content-peta-lahan">
+            <div class="peta-lahan-text">
+               <h1>Peta Fungsi Lahan</h1>
+            </div>
+            <div id="map">
+            </div>
+         </div>
+      </section>
+      <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         AOS.init();
+      </script>
+      <script src="js/qgis2web_expressions.js"></script>
+      <script src="js/leaflet.js"></script>
+      <script src="js/leaflet.rotatedMarker.js"></script>
+      <script src="js/leaflet.pattern.js"></script>
+      <script src="js/leaflet-hash.js"></script>
+      <script src="js/Autolinker.min.js"></script>
+      <script src="js/rbush.min.js"></script>
+      <script src="js/labelgun.min.js"></script>
+      <script src="js/labels.js"></script>
+      <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
+      <script src="js/leaflet-measure.js"></script>
+      <script src="data/UTM_kidul_1.js"></script>
+      <script src="data/Penggunaan_lahan1_2.js"></script>
+      <script src="peta.js"></script>
+   </body>
+
+</html>
